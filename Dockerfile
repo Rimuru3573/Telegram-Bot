@@ -4,6 +4,7 @@ WORKDIR /app
 
 RUN pip install aiogram
 RUN pip install openai
+RUN pip install aiohttp-socks
 
 COPY get.py .
 COPY main.py .
