@@ -6,11 +6,10 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.client.session.aiohttp import AiohttpSession
 import asyncio
 from get import getzapros
-session = AiohttpSession(proxy='http://proxy.server:3128')
 class test(StatesGroup):
     text = State()
 
-bot = Bot(token="8158064890:AAHnV1rescW0qKwdKBJOLSjqp2P3MQclTTQ", session=session)
+bot = Bot(token="8158064890:AAHnV1rescW0qKwdKBJOLSjqp2P3MQclTTQ",)
 dp = Dispatcher()
 
 async def main():
