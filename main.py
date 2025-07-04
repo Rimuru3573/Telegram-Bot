@@ -5,7 +5,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.client.session.aiohttp import AiohttpSession
 import asyncio
-from test3 import getzapros
+from get import getzapros
 session = AiohttpSession(proxy='http://proxy.server:3128')
 class test(StatesGroup):
     text = State()
