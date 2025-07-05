@@ -1,7 +1,6 @@
 from aiohttp import *
-import asyncio
 
-async def getzapros():
+async def getzapros(text):
     async with ClientSession() as session:
         async with session.post(
             url="https://openrouter.ai/api/v1/chat/completions",
@@ -14,7 +13,7 @@ async def getzapros():
                 "messages": [
                     {
                         "role": "user",
-                        "content": "What is the meaning of life?"
+                        "content": text
                     }
                 ],
             },
